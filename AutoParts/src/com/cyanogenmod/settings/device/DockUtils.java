@@ -29,7 +29,6 @@ import java.util.List;
 import java.util.Set;
 
 import com.cyanogenmod.asusdec.KeyHandler;
-import com.cyanogenmod.settings.device.R;
 
 public class DockUtils {
 
