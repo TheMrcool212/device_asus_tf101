@@ -53,10 +53,10 @@
             android:maxFileSize="4096" />
     <!-- external USB drive -->
     <storage android:mountPoint="/storage/usbdisk0"
-            android:storageDescription="@string/storage_usb"
+            android:storageDescription="@string/storage_usbdisk1"
             android:removable="true" />
     <!-- external USB drive -->
     <storage android:mountPoint="/storage/usbdisk1"
-            android:storageDescription="@string/storage_usb"
+            android:storageDescription="@string/storage_usbdisk2"
             android:removable="true" />
 </StorageList>
