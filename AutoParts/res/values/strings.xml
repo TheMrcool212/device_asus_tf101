@@ -40,7 +40,7 @@
     <string name="display_smartdimmer_summary">Enable Nvidia Smartdimmer technology for controlling LCD brightness.</string>
 
     <!-- Dock -->
-    <string name="dock_settings_title">Dock</string>
+    <string name="dock_settings_title">Dock (W.I.P)</string>
     <string name="dock_msg_failed">Failed to set the dock property</string>
 
     <!-- Dock * Power -->
