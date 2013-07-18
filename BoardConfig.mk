@@ -45,12 +45,25 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 ARCH_ARM_HIGH_OPTIMIZATION := true
 TARGET_USE_O3 := true
 
+#TARGET_BOARD_INFO_FILE := device/asus/tf101/board-info.txt
 
-# scorpion
-BOARD_MALLOC_ALIGNMENT := 16
-USE_ALL_OPTIMIZED_STRING_FUNCS := true
-NEED_WORKAROUND_CORTEX_A9_745320 := true
-TARGET_EXTRA_CFLAGS := $(call cc-option,-mtune=cortex-a9) $(call cc-option,-mcpu=cortex-a9)
+BOARD_EGL_CFG := device/asus/tf101/egl.cfg
+
+BOARD_USES_HGL := true
+BOARD_USES_OVERLAY := true
+USE_OPENGL_RENDERER := true
+BOARD_EGL_NEEDS_LEGACY_FB := true
+
+#TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
+#TARGET_RECOVERY_UI_LIB := librecovery_ui_tf101
+#TARGET_RECOVERY_UPDATER_LIBS += librecovery_updater_tf101
+
+TARGET_USERIMAGES_USE_EXT4 := true
+BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 5242880
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 536870912
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 14372306944
+BOARD_FLASH_BLOCK_SIZE := 4096
 
 # wireless
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
@@ -80,9 +93,11 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/asus/tf101/bluetooth
 # camera
 USE_CAMERA_STUB := false
 
-# display
-BOARD_USE_SKIA_LCDTEXT := true
-BOARD_NO_ALLOW_DEQUEUE_CURRENT_BUFFER := true
+# Boot into recovery hack
+TARGET_RECOVERY_PRE_COMMAND := "echo 'boot-recovery' > /dev/block/mmcblk0p3; sync"
+
+# AOSP releasetools extensions
+TARGET_RELEASETOOLS_EXTENSIONS := device/asus/tf101
 
 # kernel - disable inline building for now  
 TARGET_KERNEL_SOURCE := kernel/asus/tf101
