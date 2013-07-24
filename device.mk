@@ -146,7 +146,7 @@ PRODUCT_PACKAGES += \
     tinyplay \
     tinyrec \
     audio.primary.ventana \
-    AutoParts_tfp \
+    AutoParts \
     Trebuchet \
     PerformanceControl
 

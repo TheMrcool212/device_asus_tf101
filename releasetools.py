@@ -21,7 +21,6 @@ import sys
 import subprocess
 
 OPTIONS = common.OPTIONS
-OPTIONS.backuptool = False
 
 OUT_DIR = os.getenv('OUT')
 
