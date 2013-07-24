@@ -1,7 +1,6 @@
 LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE_TAGS := eng
 LOCAL_SRC_FILES := blobpack.cpp
 LOCAL_CFLAGS += -I. -Ishared -Wall -ggdb
 LOCAL_MODULE := blobpack_tf
