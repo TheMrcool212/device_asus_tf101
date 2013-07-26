@@ -228,12 +228,6 @@
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">8</integer>
 
-    <!-- don't allow a desiredWallpaper dimension bigger than this value --> 
-    <add-resource type="integer" name="config_desiredWallpaperSizeMaxWidth"></add-resource>
-    <integer name="config_desiredWallpaperSizeMaxWidth">1504</integer>
-    <add-resource type="integer" name="config_desiredWallpaperSizeMaxHeight"></add-resource>
-    <integer name="config_desiredWallpaperSizeMaxHeight">1280</integer> 
-
     <!-- Asus Dock Compatiblity should be enabled -->
     <bool name="config_hasDockBattery">true</bool>  
 

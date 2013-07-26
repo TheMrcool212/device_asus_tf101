@@ -141,14 +141,11 @@ PRODUCT_PACKAGES += \
     libinvensense_mpl \
     blobpack_tf \
     mischelp \
-    libaudioutils \
     tinymix \
     tinyplay \
     tinyrec \
     audio.primary.ventana \
-    AutoParts \
-    Trebuchet \
-    PerformanceControl
+    Trebuchet
 
 # override
 PRODUCT_PROPERTY_OVERRIDES := \
